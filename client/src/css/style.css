@@ -1,0 +1,109 @@
+/* CSS for the app shell */
+:root {
+    --dark-color: #222;
+    --primary-color: #31a9e1;
+    --gray-color: #ececec;
+    --whitesmoke-color: #f5f5f5;
+    --monoaki-color: #272822;
+    --navbar-height: 50px;
+  }
+  
+  body {
+    margin: 0;
+    background-color: var(--monoaki-color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+  }
+  
+  #navbar {
+    height: var(--navbar-height);
+    background-color: var(--primary-color);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 22px;
+    font-weight: 550;
+    letter-spacing: 0.9px;
+  }
+  
+  .navbar-brand img {
+    padding-top: 10px;
+  }
+  
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - var(--navbar-height));
+  }
+  
+  .loading-spinner {
+    animation: rotate-forever 0.75s linear infinite;
+    height: 30px;
+    width: 30px;
+    border: 3px solid var(--primary-color);
+    border-right-color: transparent;
+    border-radius: 50%;
+  }
+  
+  @keyframes rotate-forever {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .app-update {
+    display: none;
+    position: absolute;
+    right: 10px;
+  }
+  
+  .app-update.show {
+    display: block;
+  }
+  
+  .nav-btn {
+    margin: 25px;
+  }
+  
+  .btn {
+    text-align: center;
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    margin: 0;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    border: 1px solid transparent;
+    outline: none;
+    color: #1a1a1a;
+    background-color: #aeaeae;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  }
+  
+  /* Remaining styles remain the same */
+  
+  @media only screen and (max-width: 600px) {
+    .nav-btn {
+      display: none;
+    }
+  
+    .navbar-brand {
+      display: none;
+    }
+  
+    #navbar {
+      justify-content: center;
+    }
+  
+    h1 {
+      font-size: 18px;
+    }
+  }
+  
