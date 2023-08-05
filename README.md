@@ -3,7 +3,6 @@
     
 ## Table of Contents
 - [Project Description](#Description)
-- [Screenshot](#Screenshot)
 - [Deployed app](#App-link)
 - [Usage](#Usage)
 - [Installation](#Installation)
@@ -14,10 +13,6 @@
 ## Description
 
 This document editing software provides a platform that can be accessed both via the internet and without an internet connection. It offers a convenient space for coders to create scripts or jot down notes, ensuring their work is safely stored for future reference, even when offline. The software also comes with the ability to set itself up as a Progressive Web Application (PWA) for use when no internet connection is available. To begin, simply fetch the code and initiate it in your terminal using the 'npm start' command. Afterward, launch your web browser and navigate to http://localhost: (remember to replace with the port number your server is operating on, for example, http://localhost:3000).
-
-## Screenshot-of-app
-Sample of the application is found in the screenshot below 
-![Screenshot]()
 
 ## App-link
 Click here to acess the noter taker [Here](https://whirlwindraven.github.io/PWA/)
